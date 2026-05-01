@@ -9,7 +9,7 @@
     "age": 3,
     "location": "Bogura",
     "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural feed.",
-    "image": "https://i.postimg.cc/example-cow1.jpg",
+    "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
     "category": "Large Animal"
   },
   {
@@ -22,7 +22,7 @@
     "age": 2,
     "location": "Dhaka",
     "description": "Premium Black Bengal goat, known for tender meat and high demand.",
-    "image": "https://i.postimg.cc/example-goat1.jpg",
+    "image": "https://i.ibb.co/99QgGKm3/photo-1570042225831-d98fa7577f1e.avif",
     "category": "Small Animal"
   },
   {
@@ -35,7 +35,7 @@
     "age": 1.5,
     "location": "Chittagong",
     "description": "Healthy hill sheep raised in natural environment with organic feed.",
-    "image": "https://i.postimg.cc/example-sheep1.jpg",
+    "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
     "category": "Small Animal"
   },
   {
@@ -48,7 +48,7 @@
     "age": 5,
     "location": "Rajshahi",
     "description": "Strong and well-trained horse suitable for riding and transport.",
-    "image": "https://i.postimg.cc/example-horse1.jpg",
+    "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
     "category": "Large Animal"
   },
   {
@@ -61,7 +61,7 @@
     "age": 4,
     "location": "Khulna",
     "description": "High milk-producing buffalo, healthy and well-maintained.",
-    "image": "https://i.postimg.cc/example-buffalo1.jpg",
+    "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
     "category": "Large Animal"
   },
   {
@@ -74,7 +74,7 @@
     "age": 0.8,
     "location": "Sylhet",
     "description": "Organic farm-raised Sonali chicken, ideal for daily consumption.",
-    "image": "https://i.postimg.cc/example-chicken1.jpg",
+    "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
     "category": "Poultry"
   }
 ]
