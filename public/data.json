@@ -8,7 +8,7 @@
     "weight": 280,
     "age": 3,
     "location": "Bogura",
-    "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural feed.",
+    "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural feed. This cow is raised in a clean and traditional farming environment in Bogura. It has been carefully maintained with proper nutrition and regular health care. The animal is strong, active, and ready for religious sacrifice or farming use.",
     "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
     "category": "Large Animal"
   },
@@ -21,7 +21,7 @@
     "weight": 35,
     "age": 2,
     "location": "Dhaka",
-    "description": "Premium Black Bengal goat, known for tender meat and high demand.",
+    "description": "Premium Black Bengal goat, known for tender meat and high demand. This goat is raised with proper care in a healthy environment in Dhaka. It is well-fed with balanced nutrition to ensure strong growth and good health. Black Bengal goats are highly valued for their meat quality and market popularity.",
     "image": "https://i.ibb.co/99QgGKm3/photo-1570042225831-d98fa7577f1e.avif",
     "category": "Small Animal"
   },
@@ -34,7 +34,7 @@
     "weight": 22,
     "age": 1.5,
     "location": "Chittagong",
-    "description": "Healthy hill sheep raised in natural environment with organic feed.",
+    "description": "Healthy hill sheep raised in natural environment with organic feed. This sheep is grown in the hilly areas of Chittagong with natural grazing conditions. It is free from artificial growth hormones and maintained in an open environment. The animal is young, healthy, and suitable for meat production.",
     "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
     "category": "Small Animal"
   },
@@ -47,7 +47,7 @@
     "weight": 420,
     "age": 5,
     "location": "Rajshahi",
-    "description": "Strong and well-trained horse suitable for riding and transport.",
+    "description": "Strong and well-trained horse suitable for riding and transport. This horse is trained for riding and light transport work in Rajshahi. It has strong stamina, good speed, and a calm temperament. The horse is well-maintained with proper diet and regular training sessions, making it reliable for professional use.",
     "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
     "category": "Large Animal"
   },
@@ -60,7 +60,7 @@
     "weight": 500,
     "age": 4,
     "location": "Khulna",
-    "description": "High milk-producing buffalo, healthy and well-maintained.",
+    "description": "High milk-producing buffalo, healthy and well-maintained. This Murrah buffalo is raised in Khulna under proper dairy farming conditions. It is known for high milk yield and strong physical condition. The animal is well-fed and regularly cared for to maintain productivity and health.",
     "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
     "category": "Large Animal"
   },
@@ -73,7 +73,7 @@
     "weight": 2.2,
     "age": 0.8,
     "location": "Sylhet",
-    "description": "Organic farm-raised Sonali chicken, ideal for daily consumption.",
+    "description": "Organic farm-raised Sonali chicken, ideal for daily consumption. This Sonali chicken is raised in a hygienic farm environment in Sylhet. It is fed with natural and balanced poultry feed for healthy growth. The chicken is fresh, organic, and perfect for daily cooking and consumption.",
     "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
     "category": "Poultry"
   }

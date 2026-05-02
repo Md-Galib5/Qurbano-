@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaWeight, FaBirthdayCake, FaMapMarkerAlt } from "react-icons/fa";
+import { MdAttachMoney } from "react-icons/md";
+
 
 const Card = ({ cow,animal }) => {
 
@@ -28,9 +31,11 @@ const Card = ({ cow,animal }) => {
                     <p className="font-bold">.</p>
                     <p className="text-gray-600">{cow.location}</p>
                 </div>
-                <button className='btn w-full bg-green-400 text-white'>
-                  <Link href={'/login'}>Details</Link>
-                </button>
+                <Link href={`/all-animals/${cow.id}`}>
+  <button className='btn w-full bg-green-400 text-white'>
+    Details
+  </button>
+</Link>
             </div>
         </div>
     );
