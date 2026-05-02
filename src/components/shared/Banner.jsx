@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import IMG from "../../assets/cows-green-field.jpg";
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const Banner = () => {
   return (
@@ -22,9 +24,12 @@ const Banner = () => {
           Fresh air, green fields, and happy cows 🐄
         </p>
 
+        <Link href={'/all-animals'}>
         <button className="bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg font-semibold transition">
           Explore Now
         </button>
+        </Link>
+  
       </div>
     </div>
   );

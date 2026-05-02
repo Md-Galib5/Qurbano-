@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { motion } from "framer-motion";
 
 const BookingForm = () => {
   const [formData, setFormData] = useState({
@@ -23,10 +24,8 @@ const BookingForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // ✅ Toast after clicking button
     toast.success("Booking request sent successfully!");
 
-    // ✅ Reset fields
     setFormData({
       name: "",
       email: "",
@@ -100,12 +99,20 @@ const BookingForm = () => {
             required
           />
         </fieldset>
-        <button
-          type="submit"
-          className="w-full mt-5 btn bg-green-500 text-white rounded-3xl"
-        >
-          Book Now
-        </button>
+            <motion.button
+  type="submit"
+  animate={{ y: [0, -6, 0] }}
+  transition={{
+    duration: 1.2,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  whileHover={{ scale: 1.03 }}
+  whileTap={{ scale: 0.97 }}
+  className="w-full mt-5 btn bg-green-500 text-white rounded-3xl"
+>
+  Book Now
+</motion.button>
       </form>
       <ToastContainer position="top-center" />
     </div>

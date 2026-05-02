@@ -8,9 +8,9 @@
     "weight": 280,
     "age": 3,
     "location": "Bogura",
-    "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural feed. This cow is raised in a clean and traditional farming environment in Bogura. It has been carefully maintained with proper nutrition and regular health care. The animal is strong, active, and ready for religious sacrifice or farming use.",
+    "description": "Healthy deshi cow suitable for Qurbani. Raised in clean farm environment with natural feeding. Strong, healthy, and well maintained.",
     "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
-    "category": "Large Animal"
+    "category": "Cow"
   },
   {
     "id": 2,
@@ -21,9 +21,9 @@
     "weight": 35,
     "age": 2,
     "location": "Dhaka",
-    "description": "Premium Black Bengal goat, known for tender meat and high demand. This goat is raised with proper care in a healthy environment in Dhaka. It is well-fed with balanced nutrition to ensure strong growth and good health. Black Bengal goats are highly valued for their meat quality and market popularity.",
+    "description": "Premium Black Bengal goat known for tender meat. Raised in hygienic conditions with proper care. Healthy and active livestock.",
     "image": "https://i.ibb.co/99QgGKm3/photo-1570042225831-d98fa7577f1e.avif",
-    "category": "Small Animal"
+    "category": "Goat"
   },
   {
     "id": 3,
@@ -34,22 +34,22 @@
     "weight": 22,
     "age": 1.5,
     "location": "Chittagong",
-    "description": "Healthy hill sheep raised in natural environment with organic feed. This sheep is grown in the hilly areas of Chittagong with natural grazing conditions. It is free from artificial growth hormones and maintained in an open environment. The animal is young, healthy, and suitable for meat production.",
+    "description": "Healthy hill sheep raised in natural grazing land. Free from hormones and artificial feed. Suitable for meat production.",
     "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
-    "category": "Small Animal"
+    "category": "Sheep"
   },
   {
     "id": 4,
-    "name": "Indian White Horse",
-    "type": "Horse",
-    "breed": "Thoroughbred Mix",
-    "price": 350000,
-    "weight": 420,
-    "age": 5,
-    "location": "Rajshahi",
-    "description": "Strong and well-trained horse suitable for riding and transport. This horse is trained for riding and light transport work in Rajshahi. It has strong stamina, good speed, and a calm temperament. The horse is well-maintained with proper diet and regular training sessions, making it reliable for professional use.",
+    "name": "Arabian Camel",
+    "type": "Camel",
+    "breed": "Arabian",
+    "price": 600000,
+    "weight": 550,
+    "age": 6,
+    "location": "Cox's Bazar",
+    "description": "Strong Arabian camel suitable for transport and cultural use. Well-trained and healthy. Adapted to hot climate conditions.",
     "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
-    "category": "Large Animal"
+    "category": "Camel"
   },
   {
     "id": 5,
@@ -60,21 +60,86 @@
     "weight": 500,
     "age": 4,
     "location": "Khulna",
-    "description": "High milk-producing buffalo, healthy and well-maintained. This Murrah buffalo is raised in Khulna under proper dairy farming conditions. It is known for high milk yield and strong physical condition. The animal is well-fed and regularly cared for to maintain productivity and health.",
+    "description": "High milk-producing Murrah buffalo. Raised in dairy farm with proper nutrition. Strong, healthy, and productive animal.",
     "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
-    "category": "Large Animal"
+    "category": "Buffalo"
   },
   {
     "id": 6,
-    "name": "Farm Chicken",
-    "type": "Chicken",
-    "breed": "Sonali",
-    "price": 650,
-    "weight": 2.2,
-    "age": 0.8,
-    "location": "Sylhet",
-    "description": "Organic farm-raised Sonali chicken, ideal for daily consumption. This Sonali chicken is raised in a hygienic farm environment in Sylhet. It is fed with natural and balanced poultry feed for healthy growth. The chicken is fresh, organic, and perfect for daily cooking and consumption.",
+    "name": "Deshi Bull",
+    "type": "Cow",
+    "breed": "Local Bull",
+    "price": 180000,
+    "weight": 320,
+    "age": 4,
+    "location": "Rangpur",
+    "description": "Strong deshi bull raised in rural farm environment. Well-fed with natural food. Healthy and ready for farming use.",
     "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
-    "category": "Poultry"
+    "category": "Cow"
+  },
+  {
+    "id": 7,
+    "name": "Jamuna Pari Goat",
+    "type": "Goat",
+    "breed": "Jamuna Pari",
+    "price": 30000,
+    "weight": 40,
+    "age": 2.5,
+    "location": "Cumilla",
+    "description": "Large size Jamuna Pari goat known for meat quality. Healthy, strong, and well-fed. Popular in local livestock markets.",
+    "image": "https://i.ibb.co/99QgGKm3/photo-1570042225831-d98fa7577f1e.avif",
+    "category": "Goat"
+  },
+  {
+    "id": 8,
+    "name": "Local Sheep",
+    "type": "Sheep",
+    "breed": "Deshi Sheep",
+    "price": 16000,
+    "weight": 20,
+    "age": 1.2,
+    "location": "Khagrachari",
+    "description": "Healthy local sheep raised in hill environment. Natural feeding, no chemicals. Suitable for meat production.",
+    "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
+    "category": "Sheep"
+  },
+  {
+    "id": 9,
+    "name": "Holstein Cow",
+    "type": "Cow",
+    "breed": "Holstein",
+    "price": 250000,
+    "weight": 350,
+    "age": 5,
+    "location": "Mymensingh",
+    "description": "High milk-producing Holstein cow from dairy farm. Healthy and well maintained. Strong productivity and good condition.",
+    "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
+    "category": "Cow"
+  },
+  {
+    "id": 10,
+    "name": "Murrah Buffalo",
+    "type": "Buffalo",
+    "breed": "Murrah",
+    "price": 170000,
+    "weight": 520,
+    "age": 4.5,
+    "location": "Faridpur",
+    "description": "Premium Murrah buffalo with high milk production. Raised in clean farm conditions. Strong and productive livestock.",
+    "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
+    "category": "Buffalo"
+  },
+  {
+    "id": 11,
+    "name": "Deshi Calf",
+    "type": "Cow",
+    "breed": "Local Calf",
+    "price": 90000,
+    "weight": 150,
+    "age": 1.5,
+    "location": "Tangail",
+    "description": "Young deshi calf raised in natural farm environment. Healthy growth with proper nutrition. Future farming potential.",
+    "image": "https://i.ibb.co/xKL0Q1M5/brown-Guernsey-cow.webp",
+    "category": "Cow"
   }
 ]
