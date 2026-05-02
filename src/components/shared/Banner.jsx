@@ -4,7 +4,7 @@ import IMG from "../../assets/cows-green-field.jpg";
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-[400px] sm:h-[550px] ">
+    <div className="relative container mx-auto w-full h-[400px] sm:h-[550px] mt-3">
       <Image
         src={IMG}
         alt="cow field"

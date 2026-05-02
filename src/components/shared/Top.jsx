@@ -6,17 +6,20 @@ const Top = async () => {
         cache: "no-store",
     });
 
-    const data = await res.json();
+    const animals = await res.json();
+    const data = animals.slice(0,4)
 
     // console.log(data);
 
     return (
-        <div className="w-11/12 mx-auto">
+        <div className="container mx-auto mt-5">
             <h2 className="text-2xl font-bold">Featured Animals</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
             {data.map(cow => 
                 // <h2 key={cow.id}>{cow.image}</h2>
                 <Card key={cow.id} cow={cow} />
             )}
+        </div>
         </div>
     );
 };
