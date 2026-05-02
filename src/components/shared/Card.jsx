@@ -9,7 +9,7 @@ const Card = ({ cow,animal }) => {
     if (!cow) return null;
 
     return (
-        <div className="card bg-base-100 shadow-sm p-6">
+        <div className="card shadow-md p-6">
             <figure>
                 <Image
                     src={cow.image}

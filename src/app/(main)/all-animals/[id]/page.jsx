@@ -21,7 +21,7 @@ const DetailsPage = async ({params}) => {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:w-[83%] mx-auto mt-5 px-4 sm:px-0">
             <div>
-                <div className='shadow-md p-5 space-y-2'>
+                <div className='shadow-2xl p-5 space-y-2'>
                     <Image
                                     src={animal.image}
                                     alt="animal name"

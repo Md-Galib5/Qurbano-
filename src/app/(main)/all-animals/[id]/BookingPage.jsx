@@ -35,7 +35,7 @@ const BookingForm = () => {
   };
 
   return (
-    <div className="bg-[#eff3ed] lg:h-[795px] sm:p-20">
+    <div className="bg-[#eff3ed] shadow-2xl lg:h-[795px] sm:p-20">
       
       <div className="px-4 mt-3">
         <h2 className="text-xl font-bold">Book This Animal</h2>
@@ -45,7 +45,7 @@ const BookingForm = () => {
       </div>
       <form
         onSubmit={handleSubmit}
-        className="px-4 mt-3 bg-white m-4 rounded-2xl shadow-sm pb-3 space-y-3"
+        className="px-4 mt-3 bg-white m-4 rounded-2xl shadow-2xl pb-3 space-y-3"
       >
 
         <fieldset className="fieldset">

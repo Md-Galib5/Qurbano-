@@ -19,10 +19,10 @@ const Navbar = () => {
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         <li>
-          <NavLink href={'/'}>Home</NavLink>
+          <NavLink href={'/'}><span className='font-semibold'>Home</span></NavLink>
           </li>
         <li>
-          <NavLink href={'/all-animals'}>All Animals</NavLink>
+          <NavLink href={'/all-animals'}><span className='font-semibold'>All Animals</span></NavLink>
           </li>
       </ul>
     </div>
@@ -36,8 +36,8 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><NavLink href={'/'}>Home</NavLink></li>
-      <li><NavLink href={'/all-animals'}>All Animals</NavLink></li>
+      <li><NavLink href={'/'}><span className='font-semibold'>Home</span></NavLink></li>
+      <li><NavLink href={'/all-animals'}><span className='font-semibold'>All Animals</span></NavLink></li>
     </ul>
   </div>
   <div className="navbar-end gap-3">
