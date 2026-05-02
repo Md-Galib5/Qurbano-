@@ -22,7 +22,7 @@ const Card = ({ cow,animal }) => {
 
             <div className="mx-4 mt-3 space-y-3">
                 <h2 className="card-title font-bold text-lg">{cow.name}</h2>
-                <p className="text-gray-600">{cow.description}</p>
+                <p className="text-gray-600 line-clamp-2">{cow.description}</p>
                 <p className="text-xl font-semibold text-green-600">Taka {cow.price}</p>
                 <div className="flex items-center gap-3">
                     <p className="text-gray-600">{cow.weight}Kg</p>
