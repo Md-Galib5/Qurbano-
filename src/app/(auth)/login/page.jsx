@@ -58,9 +58,9 @@ export default function SignUpPage() {
       setTimeout(() => {
         router.push("/");
       }, 1500);
-      toast.success("Google login successful 🎉");
+      toast.success("Google login successful");
     } catch (err) {
-      toast.error("Google login failed ❌");
+      toast.error("Google login failed");
     }
   };
 
