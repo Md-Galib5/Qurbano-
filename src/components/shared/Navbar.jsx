@@ -34,6 +34,9 @@ const Navbar = () => {
         <li>
           <NavLink href={'/all-animals'}><span className='font-semibold'>All Animals</span></NavLink>
           </li>
+           <li>
+          <NavLink href={'/profile'}><span className='font-semibold'>Profile</span></NavLink>
+          </li>
       </ul>
     </div>
 
@@ -48,6 +51,7 @@ const Navbar = () => {
     <ul className="menu menu-horizontal px-1">
       <li><NavLink href={'/'}><span className='font-semibold'>Home</span></NavLink></li>
       <li><NavLink href={'/all-animals'}><span className='font-semibold'>All Animals</span></NavLink></li>
+      <li><NavLink href={'/profile'}><span className='font-semibold'>Profile</span></NavLink></li>
     </ul>
   </div>
    <div className="navbar-end gap-3">
