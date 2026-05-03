@@ -38,10 +38,10 @@ export default function SignUpPage() {
       toast.error(error.message || "Registration failed ❌");
       return;
     }
-    
+
     toast.success("Registration successful 🎉");
     setTimeout(() => {
-      router.push("/");
+      router.push("/login");
     }, 500);
   };
 
