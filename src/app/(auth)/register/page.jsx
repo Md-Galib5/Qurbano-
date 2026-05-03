@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { authClient } from "../../../lib/auth-client";
 // import { Check } from "@gravity-ui/icons";
 import {
@@ -104,7 +104,6 @@ export default function SignUpPage() {
 
         <div className="flex gap-2">
           <Button type="submit">
-            {/* <Check /> */}
             Submit
           </Button>
           <Button type="reset" variant="secondary">
@@ -112,8 +111,6 @@ export default function SignUpPage() {
           </Button>
         </div>
       </Form>
-
-
     </Card>
   );
 }
