@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { authClient } from "../../../lib/auth-client";
 // import { Check } from "@gravity-ui/icons";
 import {
@@ -42,10 +42,11 @@ export default function SignUpPage() {
   };
 
   return (
-    <Card className="border border-gray-300 mx-auto w-125 py-10 mt-5 shadow-2xl">
-      <h1 className="text-center text-2xl font-bold">Sign Up</h1>
+    <div className="px-4 sm:px-0">
+    <Card className="border border-gray-300 mx-auto w-full max-w-md p-3 sm:p-10 mt-5 shadow-2xl">
+      <h1 className="text-center text-2xl font-bold">Register</h1>
 
-      <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
+      <Form className="flex w-full mx-auto flex-col gap-4" onSubmit={onSubmit}>
         <TextField isRequired name="name" type="text">
           <Label>Name</Label>
           <Input placeholder="Enter your name" />
@@ -112,5 +113,6 @@ export default function SignUpPage() {
         </div>
       </Form>
     </Card>
+    </div>
   );
 }

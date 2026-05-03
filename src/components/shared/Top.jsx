@@ -7,7 +7,7 @@ const Top = async () => {
     });
 
     const animals = await res.json();
-    const data = animals.slice(0,4)
+    const data = animals.slice(0,6)
 
     // console.log(data);
 
