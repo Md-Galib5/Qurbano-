@@ -1,6 +1,6 @@
 "use client";
 import { FaGoogle } from "react-icons/fa";
-import { authClient } from "../../../lib/auth-client";
+
 // import { Check } from "@gravity-ui/icons";
 import {
   Button,
@@ -13,6 +13,7 @@ import {
   TextField,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
+import { authClient } from "@/lib/auth-client";
 
 export default function SignUpPage() {
 
