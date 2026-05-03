@@ -1,12 +1,22 @@
+"use client";
+
 import React from 'react';
 import LOGO from "../../assets/logo.png"
 import Image from "next/image";
 import Link from 'next/link';
 import NavLink from './NavLink';
+import { authClient } from '@/lib/auth-client';
+import { Avatar, Button } from '@heroui/react';
 
 
 
 const Navbar = () => {
+  const userData = authClient.useSession()
+  const user = userData.data?.user
+
+  const handleSignOut = async() =>{
+    await authClient.signOut();
+  }
     return (
         <div className='container mx-auto'>
             <div className="navbar bg-base-100">
@@ -40,13 +50,42 @@ const Navbar = () => {
       <li><NavLink href={'/all-animals'}><span className='font-semibold'>All Animals</span></NavLink></li>
     </ul>
   </div>
-  <div className="navbar-end gap-3">
-   <button className='btn'>
-    <Link href={'/login'}>Login</Link>
+   <div className="navbar-end gap-3">
+    {!user && <ul className='flex gap-3'>
+
+    <Link href={'/login'}>
+    <button className='btn'>Login</button>
+    </Link>
+    <Link href={'/register'}>
+    <button className='btn'>Register
    </button>
-    <button className='btn'>
-    <Link href={'/register'}>Register</Link>
-   </button>
+     </Link>
+   </ul>
+   }
+
+   {
+    user && <div className='flex gap-2'>
+                <Link href="/profile">
+  <Avatar size="sm" className="cursor-pointer">
+    <Avatar.Image
+      alt="User avatar"
+      src={user?.image}
+      referrerPolicy="no-referrer"
+    />
+    <Avatar.Fallback>{user?.name[0]}</Avatar.Fallback>
+  </Avatar>
+</Link>
+
+     <Button onClick={handleSignOut}
+  size="sm"
+  className="bg-red-600 hover:bg-red-700 text-white font-semibold"
+>
+  Sign Out
+</Button>
+
+    </div>
+   }
+
   </div>
 </div>
         </div>

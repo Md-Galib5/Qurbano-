@@ -1,5 +1,6 @@
 "use client";
 import { authClient } from "../../../lib/auth-client";
+import { FaGoogle } from "react-icons/fa";
 // import { Check } from "@gravity-ui/icons";
 import {
   Button,
@@ -40,6 +41,12 @@ export default function SignUpPage() {
     }
 
   };
+
+  const handleGoogleSignIn = async() => {
+        await authClient.signIn.social({
+            provider: 'google'
+        })
+    }
 
   return (
     <div className="px-4 sm:px-0">
@@ -112,6 +119,9 @@ export default function SignUpPage() {
           </Button>
         </div>
       </Form>
+          <p className="text-center font-semibold">Or</p>
+                <button onClick={handleGoogleSignIn} className="btn btn-primary rounded-4xl"><FaGoogle />
+          Sign With Google</button>
     </Card>
     </div>
   );
