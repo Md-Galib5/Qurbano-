@@ -1,7 +1,7 @@
 "use client";
-import { FaGoogle } from "react-icons/fa";
 
-// import { Check } from "@gravity-ui/icons";
+import { useState } from "react";
+import { FaGoogle } from "react-icons/fa";
 import {
   Button,
   Card,
@@ -15,101 +15,125 @@ import {
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 
-export default function SignUpPage() {
+import { toast } from "react-toastify";
 
-    const router = useRouter()
+export default function SignUpPage() {
+  const router = useRouter();
+  const [loading, setLoading] = useState(false);
 
   const onSubmit = async (e) => {
     e.preventDefault();
 
+    setLoading(true);
+
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    const {data, error} = await authClient.signIn.email({
-        email,
-        password,
-        callbackURL: '/'
-        
-    })
-    
+    const { data, error } = await authClient.signIn.email({
+      email,
+      password,
+      callbackURL: "/",
+    });
 
-    console.log({data, error})
+    setLoading(false);
 
-    if(!error) {
-        router.push('/')
+    if (error) {
+      toast.error(error.message || "Login failed ❌");
+       router.push("/register");
+      return;
     }
 
+    toast.success("Login successful 🎉");
+
+    setTimeout(() => {
+      router.push("/");
+    }, 500);
   };
 
-  const handleGoogleSignIn = async() => {
-        await authClient.signIn.social({
-            provider: 'google'
-        })
+  const handleGoogleSignIn = async () => {
+    try {
+      await authClient.signIn.social({
+        provider: "google",
+      });
+      setTimeout(() => {
+        router.push("/");
+      }, 1500);
+      toast.success("Google login successful 🎉");
+    } catch (err) {
+      toast.error("Google login failed ❌");
     }
+  };
 
   return (
     <div className="px-4 sm:px-0">
-    <Card className="border border-gray-300 mx-auto w-full max-w-md p-3 sm:p-10 mt-5 shadow-2xl">
-      <h1 className="text-center text-2xl font-bold">Login</h1>
+      <Card className="border border-gray-300 mx-auto w-full max-w-md p-3 sm:p-10 mt-5 shadow-2xl">
+        <h1 className="text-center text-2xl font-bold">Login</h1>
 
-      <Form className="flex w-full mx-auto flex-col gap-4" onSubmit={onSubmit}>
-        <TextField
-          isRequired
-          name="email"
-          type="email"
-          validate={(value) => {
-            if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)) {
-              return "Please enter a valid email address";
-            }
+        <Form className="flex w-full mx-auto flex-col gap-4" onSubmit={onSubmit}>
+          <TextField
+            isRequired
+            name="email"
+            type="email"
+            validate={(value) => {
+              if (
+                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)
+              ) {
+                return "Please enter a valid email address";
+              }
+              return null;
+            }}
+          >
+            <Label>Email</Label>
+            <Input placeholder="john@example.com" />
+            <FieldError />
+          </TextField>
 
-            return null;
-          }}
+          <TextField
+            isRequired
+            minLength={8}
+            name="password"
+            type="password"
+            validate={(value) => {
+              if (value.length < 8) {
+                return "Password must be at least 8 characters";
+              }
+              if (!/[A-Z]/.test(value)) {
+                return "Password must contain at least one uppercase letter";
+              }
+              if (!/[0-9]/.test(value)) {
+                return "Password must contain at least one number";
+              }
+              return null;
+            }}
+          >
+            <Label>Password</Label>
+            <Input placeholder="Enter your password" />
+            <Description>
+              Must be at least 8 characters with 1 uppercase and 1 number
+            </Description>
+            <FieldError />
+          </TextField>
+
+          <div className="flex gap-2">
+            <Button type="submit" disabled={loading}>
+              {loading ? "Logging in..." : "Submit"}
+            </Button>
+            <Button type="reset" variant="secondary">
+              Reset
+            </Button>
+          </div>
+        </Form>
+
+        <p className="text-center font-semibold">Or</p>
+
+        <button
+          onClick={handleGoogleSignIn}
+          className="btn btn-primary rounded-4xl"
         >
-          <Label>Email</Label>
-          <Input placeholder="john@example.com" />
-          <FieldError />
-        </TextField>
-
-        <TextField
-          isRequired
-          minLength={8}
-          name="password"
-          type="password"
-          validate={(value) => {
-            if (value.length < 8) {
-              return "Password must be at least 8 characters";
-            }
-            if (!/[A-Z]/.test(value)) {
-              return "Password must contain at least one uppercase letter";
-            }
-            if (!/[0-9]/.test(value)) {
-              return "Password must contain at least one number";
-            }
-
-            return null;
-          }}
-        >
-          <Label>Password</Label>
-          <Input placeholder="Enter your password" />
-          <Description>
-            Must be at least 8 characters with 1 uppercase and 1 number
-          </Description>
-          <FieldError />
-        </TextField>
-
-        <div className="flex gap-2">
-          <Button type="submit">
-            Submit
-          </Button>
-          <Button type="reset" variant="secondary">
-            Reset
-          </Button>
-        </div>
-      </Form>
-      <p className="text-center font-semibold">Or</p>
-      <button onClick={handleGoogleSignIn} className="btn btn-primary rounded-4xl"><FaGoogle />
-Sign With Google</button>
-    </Card>
+          <FaGoogle />
+          Sign With Google
+        </button>
+      </Card>
     </div>
   );
 }

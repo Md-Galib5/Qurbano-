@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import SmoothScroll from "@/components/shared/SmothScroll";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +31,7 @@ export default function RootLayout({ children }) {
         <SmoothScroll>
           <main className="flex-1">{children}</main>
         </SmoothScroll>
+        <ToastContainer position="top-center" autoClose={2000} />
       </body>
     </html>
   );
