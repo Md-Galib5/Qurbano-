@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🐄 Qurbano – Livestock Booking Platform
 
-## Getting Started
+🔗 Live Site: https://qurbano.vercel.app/ 
+🔗 GitHub Repo: https://github.com/your-username/qurbano
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Qurbano is a modern livestock marketplace where users can explore animals for Qurbani (such as cows, goats, sheep) and book them easily after authentication.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This project focuses more on **authentication, user interaction, and real-world flow implementation** rather than only frontend design.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Features
 
-To learn more about Next.js, take a look at the following resources:
+- 🔐 User Authentication (Email/Password + Google Login)
+- 🐄 Browse All Animals
+- 📊 Sort animals by price
+- 📄 Detailed Animal Information Page
+- 📝 Booking Form with Toast Notification
+- 👤 User Profile Page
+- ✏️ Update User Info Feature
+- 🎨 Smooth UI with Tailwind CSS
+- ✨ Animation using Animate.css / AOS
+- 📱 Fully Responsive (Mobile, Tablet, Desktop)
+- ❌ Custom 404 Not Found Page
+- ⏳ Loading state on data fetch
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧠 What I Learned
 
-## Deploy on Vercel
+This project helped me understand:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🔹 How authentication works in real applications
+- 🔹 Google OAuth integration using Firebase
+- 🔹 Protected routes (Private Routing)
+- 🔹 Managing user state and conditional rendering
+- 🔹 Handling forms and showing toast notifications
+- 🔹 Fetching and displaying dynamic JSON data
+- 🔹 Component structure in Next.js (Server vs Client)
+- 🔹 Clean UI building with Tailwind CSS
+- 🔹 Adding animations to improve user experience
+- 🔹 Deployment using Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## ⚔️ Challenges I Faced
+
+### 1. 🔐 Authentication System
+Implementing login & registration with **Google Authentication** was challenging.
+
+- Handling login state
+- Redirecting users after login
+- Protecting private routes
+
+👉 This project mainly focuses on **authentication flow and user interaction**, not just frontend UI.
+
+---
+
+### 2. 🔄 Server vs Client Components (Next.js)
+Understanding when to use:
+- Server Components (for fetching data)
+- Client Components (for form, toast, interactivity)
+
+---
+
+### 3. 📦 Form Handling + Toast
+- Resetting form after submit
+- Showing success message using React Toastify
+
+---
+
+### 4. 🎬 Animation on Scroll
+- Implementing smooth animation using Animate.css / AOS
+- Making UI feel more modern
+
+---
+
+## 🛠️ Technologies Used
+
+- **Next.js**
+- **React.js**
+- **Tailwind CSS**
+- **Firebase Authentication**
+- **React Toastify**
+- **Animate.css
+- **Vercel (Deployment)**
