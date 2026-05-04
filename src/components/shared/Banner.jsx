@@ -20,13 +20,13 @@ const Banner = () => {
           Welcome to the Farm
         </h1>
 
-        <p className="mb-6 text-sm md:text-lg">
+        <p className="mb-6 text-sm md:text-lg ">
           Fresh air, green fields, and happy cows 🐄
         </p>
 
         <Link href={'/all-animals'}>
         <button className="bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg font-semibold transition">
-          Explore Now
+          Shop Now
         </button>
         </Link>
   

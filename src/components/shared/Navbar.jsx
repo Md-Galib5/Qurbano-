@@ -58,10 +58,10 @@ const Navbar = () => {
     {!user && <ul className='flex gap-3'>
 
     <Link href={'/login'}>
-    <button className='btn'>Login</button>
+    <button className='btn btn-primary'>Login</button>
     </Link>
     <Link href={'/register'}>
-    <button className='btn'>Register
+    <button className='btn border-none bg-white'>Register
    </button>
      </Link>
    </ul>
