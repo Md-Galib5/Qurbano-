@@ -1,7 +1,7 @@
 # 🐄 Qurbano – Livestock Booking Platform
 
 🔗 Live Site: https://qurbano.vercel.app/ 
-🔗 GitHub Repo: https://github.com/your-username/qurbano
+🔗 GitHub Repo: https://github.com/Md-Galib5/Qurbano-
 
 ---
 
